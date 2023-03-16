@@ -1,0 +1,3 @@
+D:\program\cmake\bin\cmake.exe -E rm -f CMakeFiles\SOCKETTEST.dir/objects.a
+D:\program\llvm-mingw\llvm-mingw-20220906-ucrt-x86_64\bin\llvm-ar.exe qc CMakeFiles\SOCKETTEST.dir/objects.a @CMakeFiles\SOCKETTEST.dir\objects1
+D:\program\llvm-mingw\llvm-mingw-20220906-ucrt-x86_64\bin\clang++.exe -g -Wl,--whole-archive CMakeFiles\SOCKETTEST.dir/objects.a -Wl,--no-whole-archive -o D:\cppproject\SocketTest\bin\SOCKETTEST.exe -Wl,--out-implib,D:\cppproject\SocketTest\bin\libSOCKETTEST.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SOCKETTEST.dir\linkLibs.rsp

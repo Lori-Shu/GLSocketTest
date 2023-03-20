@@ -547,6 +547,14 @@ src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.obj: D:/cppproject/SocketTest/
   D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream.tcc \
   D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream \
   D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/chrono \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/chrono.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ratio \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/limits \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ctime \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/parse_numbers.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/sstream \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/sstream.tcc \
   D:/cppproject/SocketTest/include/GLSocketServer.hpp \
   D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/winsock2.h \
   D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/_mingw_unicode.h \
@@ -797,7 +805,48 @@ src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.obj: D:/cppproject/SocketTest/
   D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/node_handle.h \
   D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unordered_map.h \
   D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/erase_if.h \
-  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/array
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/array \
+  D:/cppproject/SocketTest/include/GGLThreadPool.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/mutex \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_mutex.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_lock.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/condition_variable \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/shared_ptr.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/shared_ptr_base.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/allocated_ptr.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/concurrence.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bit \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/align.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_uninitialized.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/stop_token \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/atomic \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/atomic_base.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/atomic_wait.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/semaphore \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/semaphore_base.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/atomic_timed_wait.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/semaphore.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/vector \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_vector.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_bvector.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/vector.tcc \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/thread \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/functional \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_function.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_algo.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/algorithmfwd.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_heap.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_tempbuf.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/uniform_int_dist.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/queue \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/deque \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_deque.h \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/deque.tcc \
+  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_queue.h
 
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/wbnoinvdintrin.h:
@@ -809,6 +858,8 @@ D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/windows.h:
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/ctype.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/waitpkgintrin.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/concurrence.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/cldemoteintrin.h:
 
@@ -907,6 +958,8 @@ D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/sal.h:
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/string.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/concurrencysal.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_queue.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/driverspecs.h:
 
@@ -1010,6 +1063,8 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512b
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/thread:
+
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512fp16vlintrin.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/limits.h:
@@ -1027,6 +1082,8 @@ D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/limits.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/syslimits.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bit:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/aligned_buffer.h:
 
@@ -1107,6 +1164,8 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512v
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/psdk_inc/_fd_types.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512vbmi2vlintrin.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_algo.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/avx512vnnivlintrin.h:
 
@@ -1202,6 +1261,8 @@ D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/bemapiset.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/debugapi.h:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_lock.h:
+
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/type_traits.h:
@@ -1278,6 +1339,8 @@ D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/fltwinerror.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/timezoneapi.h:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_uninitialized.h:
+
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/wingdi.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/pshpack1.h:
@@ -1305,6 +1368,10 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/wincon.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/winver.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/deque.tcc:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_deque.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/winnetwk.h:
 
@@ -1354,6 +1421,8 @@ D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/bcrypt.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/ncrypt.h:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ctime:
+
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/dpapi.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cctype:
@@ -1366,6 +1435,8 @@ D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/winscard.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/wtypes.h:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_mutex.h:
+
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/ole2.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/combaseapi.h:
@@ -1374,6 +1445,10 @@ D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/objidlbase.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/objidl.h:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/sstream:
+
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/unknwn.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/urlmon.h:
@@ -1381,6 +1456,8 @@ D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/urlmon.h:
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/oleidl.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/servprov.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_function.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/oleauto.h:
 
@@ -1413,6 +1490,8 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bit
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/string:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/vector:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/functional_hash.h:
 
@@ -1464,13 +1543,21 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bit
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_iterator_base_funcs.h:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/atomic_base.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/condition_variable:
+
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/concept_check.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/debug/assertions.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdint:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_vector.h:
+
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdint.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_bvector.h:
 
 D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/stdint.h:
 
@@ -1481,6 +1568,8 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bit
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/charconv.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cpp_type_traits.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/uniform_int_dist.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/enable_special_members.h:
 
@@ -1506,6 +1595,8 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bit
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/utility.h:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/functional:
+
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/invoke.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/initializer_list:
@@ -1524,6 +1615,8 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/num
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdio:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/semaphore_base.h:
+
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cerrno:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/unordered_map:
@@ -1538,9 +1631,13 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bit
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/exception:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/queue:
+
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/exception_ptr.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/cxxabi_init_exception.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_tempbuf.h:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/typeinfo:
 
@@ -1584,6 +1681,8 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bit
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_ios.tcc:
 
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/deque:
+
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream.tcc:
 
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream:
@@ -1591,3 +1690,51 @@ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ist
 D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc:
 
 D:/cppproject/SocketTest/src/ServerApp.cpp:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/chrono:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/chrono.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_heap.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ratio:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/align.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/limits:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/parse_numbers.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/sstream.tcc:
+
+D:/cppproject/SocketTest/include/GGLThreadPool.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/mutex:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/atomic_lockfree_defines.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/shared_ptr.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/shared_ptr_base.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/allocated_ptr.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/stop_token:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/atomic:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/atomic_wait.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/semaphore:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/atomic_timed_wait.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h:
+
+D:/program/MinGWDevKit/mingw64/x86_64-w64-mingw32/include/semaphore.h:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/vector.tcc:
+
+D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/algorithmfwd.h:

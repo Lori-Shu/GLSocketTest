@@ -33,14 +33,14 @@
       "name": "(gdb) 启动 server",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/bin/SOCKETTESTServer.exe",
+      "program": "${workspaceFolder}/bin/SOCKETTESTServer",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
-      "miDebuggerPath": "D:\\program\\MinGWDevKit\\mingw64\\bin\\gdb.exe",
+      "miDebuggerPath": "/usr/bin/gdb",
       "setupCommands": [
           {
               "description": "为 gdb 启用整齐打印",

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/lori/cppprojects/GLSocketTest/include
 
-CXX_FLAGS = -std=gnu++20
+CXX_FLAGS = -g -std=gnu++20
 

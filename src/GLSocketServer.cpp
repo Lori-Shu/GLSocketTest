@@ -42,7 +42,7 @@ void GLSocketServer::loopCmd() {
   }
 }
 void GLSocketServer::bindPortAndListen(std::string port) {
-  serverSocket = socket(PF_INET, SOCK_STREAM, 0);
+  serverSocket = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
   sockaddr_in sockAddr{};
   // memset(&sockAddr, 0, sizeof(sockAddr));  //每个字节都用0填充
   sockAddr.sin_family = PF_INET;                      // 使用IPv4地址
@@ -70,9 +70,9 @@ void GLSocketServer::acceptClient() {
   string cmdStr = charBuffer.data();
   cout << endl;
   // 接收客户端请求
-  sockaddr clntAddr;
+  sockaddr_in clntAddr;
   uint32_t nSize = sizeof(sockaddr);
-  int32_t clntSock = accept(serverSocket, &clntAddr, &nSize);
+  int32_t clntSock = accept(serverSocket,(sockaddr*) &clntAddr, &nSize);
   clientMap[cmdStr] = clntSock;
 }
 

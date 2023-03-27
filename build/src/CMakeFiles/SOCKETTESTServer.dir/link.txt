@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o -o ../../bin/SOCKETTESTServer 
+/usr/bin/c++ -g CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o -o ../../bin/SOCKETTESTServer 

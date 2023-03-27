@@ -124,12 +124,12 @@ src/CMakeFiles/SOCKETTESTClient.dir/clean:
 src/CMakeFiles/SOCKETTESTServer.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/SOCKETTESTServer.dir/build.make src/CMakeFiles/SOCKETTESTServer.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/SOCKETTESTServer.dir/build.make src/CMakeFiles/SOCKETTESTServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=4,5,6,7,8 "Built target SOCKETTESTServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=4,5,6,7,8,9 "Built target SOCKETTESTServer"
 .PHONY : src/CMakeFiles/SOCKETTESTServer.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/SOCKETTESTServer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lori/cppprojects/GLSocketTest/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lori/cppprojects/GLSocketTest/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/SOCKETTESTServer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lori/cppprojects/GLSocketTest/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/SOCKETTESTServer.dir/rule

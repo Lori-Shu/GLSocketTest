@@ -168,6 +168,30 @@ ClientApp.cpp.s:
 	cd /home/lori/cppprojects/GLSocketTest/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SOCKETTESTClient.dir/build.make src/CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.s
 .PHONY : ClientApp.cpp.s
 
+GGLEpoll.o: GGLEpoll.cpp.o
+.PHONY : GGLEpoll.o
+
+# target to build an object file
+GGLEpoll.cpp.o:
+	cd /home/lori/cppprojects/GLSocketTest/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SOCKETTESTServer.dir/build.make src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o
+.PHONY : GGLEpoll.cpp.o
+
+GGLEpoll.i: GGLEpoll.cpp.i
+.PHONY : GGLEpoll.i
+
+# target to preprocess a source file
+GGLEpoll.cpp.i:
+	cd /home/lori/cppprojects/GLSocketTest/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SOCKETTESTServer.dir/build.make src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.i
+.PHONY : GGLEpoll.cpp.i
+
+GGLEpoll.s: GGLEpoll.cpp.s
+.PHONY : GGLEpoll.s
+
+# target to generate assembly for a file
+GGLEpoll.cpp.s:
+	cd /home/lori/cppprojects/GLSocketTest/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SOCKETTESTServer.dir/build.make src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.s
+.PHONY : GGLEpoll.cpp.s
+
 GGLSelectMultiIO.o: GGLSelectMultiIO.cpp.o
 .PHONY : GGLSelectMultiIO.o
 
@@ -301,6 +325,9 @@ help:
 	@echo "... ClientApp.o"
 	@echo "... ClientApp.i"
 	@echo "... ClientApp.s"
+	@echo "... GGLEpoll.o"
+	@echo "... GGLEpoll.i"
+	@echo "... GGLEpoll.s"
 	@echo "... GGLSelectMultiIO.o"
 	@echo "... GGLSelectMultiIO.i"
 	@echo "... GGLSelectMultiIO.s"

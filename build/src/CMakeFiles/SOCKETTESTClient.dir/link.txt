@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.o CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.o -o ../../bin/SOCKETTESTClient 
+/usr/bin/c++ -g CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.o CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.o -o ../../bin/SOCKETTESTClient 

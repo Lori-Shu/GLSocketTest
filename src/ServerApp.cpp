@@ -3,6 +3,7 @@
 #include "GLSocketServer.hpp"
 #include"GGLThreadPool.h"
 #include"GGLSelectMultiIO.h"
+#include"GGLEpoll.h"
 using namespace std;
 void printNums(int32_t max,int32_t min) {
   for (int32_t num = min; num < max;) {
@@ -29,7 +30,8 @@ int main() {
   //   myThreadPool.submit(printNums, numMax,nums);
   //   ++index;
   // }
-  mystd::GGLSelectMultiIO mtio{};
+  // mystd::GGLSelectMultiIO mtio{};
+  mystd::GGLEpoll epio{};
   
   cout << "hello" << endl;
   system("pause");

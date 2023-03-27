@@ -22,7 +22,7 @@ GLSocketClient ::~GLSocketClient(){
 }
 void GLSocketClient:: connectServer(){
     // 创建套接字
-    client = socket(PF_INET, SOCK_STREAM, 0);
+    client = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
 
     // 向服务器发起请求
     cout << "请输入服务器ip：";

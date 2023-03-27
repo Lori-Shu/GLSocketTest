@@ -7,6 +7,7 @@ using namespace std;
 GGLSelectMultiIO::GGLSelectMultiIO() {
   initWindowsWSA();
   createServerSocket();
+  runSelectMainLoop();
      }
      GGLSelectMultiIO ::~GGLSelectMultiIO() {
   closeSockets();
@@ -19,13 +20,13 @@ GGLSelectMultiIO::GGLSelectMultiIO() {
              sin_port : htons(PORT)
             
         };
-        serverSockAddr.sin_addr.s_addr = inet_addr("192.168.1.104");
+        serverSockAddr.sin_addr.s_addr = inet_addr("192.168.137.100");
         serverSocket = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
         int32_t res= bind(serverSocket, (sockaddr *)&serverSockAddr, sizeof(serverSockAddr));
         cout << "bind res:" << res << endl;
         int32_t resListen= listen(serverSocket, 20);
         cout << "listen res:" << resListen << endl;
-        runSelectMainLoop();
+        
       }
       
      void GGLSelectMultiIO::initWindowsWSA() {
@@ -48,7 +49,7 @@ void GGLSelectMultiIO::runSelectMainLoop(){
   int32_t clientSocket;
   maxFd = serverSocket;
   int32_t selectedSize=0,tempFD=serverSocket;
-  
+  uint32_t newSockLen;
   FD_ZERO(&readSet);
   FD_ZERO(&writeSet);
   FD_ZERO(&exceptionSet);
@@ -61,7 +62,7 @@ void GGLSelectMultiIO::runSelectMainLoop(){
         cout<<"select error"<<endl;
     }
     if(FD_ISSET(serverSocket,&readSet)){
-      clientSocket= accept(serverSocket, (sockaddr *)&clientAddr, nullptr);
+      clientSocket= accept(serverSocket, (sockaddr *)&clientAddr, &newSockLen);
       
       maxFd=max<int32_t>(clientSocket,maxFd);
       FD_SET(clientSocket, &allSet);

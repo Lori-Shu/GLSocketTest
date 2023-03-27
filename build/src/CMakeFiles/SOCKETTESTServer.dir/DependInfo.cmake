@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/lori/cppprojects/GLSocketTest/src/GGLEpoll.cpp" "src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o" "gcc" "src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o.d"
   "/home/lori/cppprojects/GLSocketTest/src/GGLSelectMultiIO.cpp" "src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o" "gcc" "src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o.d"
   "/home/lori/cppprojects/GLSocketTest/src/GGLThreadPool.cpp" "src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o" "gcc" "src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o.d"
   "/home/lori/cppprojects/GLSocketTest/src/GLSocketServer.cpp" "src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o" "gcc" "src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o.d"

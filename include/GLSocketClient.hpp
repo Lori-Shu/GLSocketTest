@@ -4,11 +4,12 @@
 #include<winsock2.h>
 #endif
 #ifdef LinuxVersion
-#include<sys/socket.h>
-#endif
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include <sys/socket.h>
 #include <unistd.h>
+#endif
+
 
 #include <array>
 #include <string>

@@ -159,6 +159,7 @@ src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o: \
  /usr/include/c++/11/ratio /usr/include/c++/11/limits \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /home/lori/cppprojects/GLSocketTest/include/GLSocketServer.hpp \
+ /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -175,7 +176,6 @@ src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -233,4 +233,7 @@ src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o: \
  /usr/include/c++/11/queue /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_queue.h \
- /home/lori/cppprojects/GLSocketTest/include/GGLSelectMultiIO.h
+ /home/lori/cppprojects/GLSocketTest/include/GGLSelectMultiIO.h \
+ /home/lori/cppprojects/GLSocketTest/include/GGLEpoll.h \
+ /usr/include/x86_64-linux-gnu/sys/epoll.h \
+ /usr/include/x86_64-linux-gnu/bits/epoll.h

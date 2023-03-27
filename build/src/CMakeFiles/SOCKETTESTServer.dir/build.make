@@ -69,10 +69,24 @@ include src/CMakeFiles/SOCKETTESTServer.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/SOCKETTESTServer.dir/flags.make
 
+src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/flags.make
+src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o: ../src/GGLEpoll.cpp
+src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o"
+	cd /home/lori/cppprojects/GLSocketTest/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o -MF CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o.d -o CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o -c /home/lori/cppprojects/GLSocketTest/src/GGLEpoll.cpp
+
+src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.i"
+	cd /home/lori/cppprojects/GLSocketTest/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lori/cppprojects/GLSocketTest/src/GGLEpoll.cpp > CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.i
+
+src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.s"
+	cd /home/lori/cppprojects/GLSocketTest/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lori/cppprojects/GLSocketTest/src/GGLEpoll.cpp -o CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.s
+
 src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/flags.make
 src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o: ../src/GGLSelectMultiIO.cpp
 src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o"
 	cd /home/lori/cppprojects/GLSocketTest/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o -MF CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o.d -o CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o -c /home/lori/cppprojects/GLSocketTest/src/GGLSelectMultiIO.cpp
 
 src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.i: cmake_force
@@ -86,7 +100,7 @@ src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.s: cmake_force
 src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/flags.make
 src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o: ../src/GGLThreadPool.cpp
 src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o"
 	cd /home/lori/cppprojects/GLSocketTest/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o -MF CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o.d -o CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o -c /home/lori/cppprojects/GLSocketTest/src/GGLThreadPool.cpp
 
 src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.i: cmake_force
@@ -100,7 +114,7 @@ src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.s: cmake_force
 src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/flags.make
 src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o: ../src/GLSocketServer.cpp
 src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o"
 	cd /home/lori/cppprojects/GLSocketTest/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o -MF CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o.d -o CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o -c /home/lori/cppprojects/GLSocketTest/src/GLSocketServer.cpp
 
 src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.i: cmake_force
@@ -114,7 +128,7 @@ src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.s: cmake_force
 src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/flags.make
 src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o: ../src/ServerApp.cpp
 src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o: src/CMakeFiles/SOCKETTESTServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o"
 	cd /home/lori/cppprojects/GLSocketTest/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o -MF CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o.d -o CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o -c /home/lori/cppprojects/GLSocketTest/src/ServerApp.cpp
 
 src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.i: cmake_force
@@ -127,6 +141,7 @@ src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.s: cmake_force
 
 # Object files for target SOCKETTESTServer
 SOCKETTESTServer_OBJECTS = \
+"CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o" \
 "CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o" \
 "CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o" \
 "CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o" \
@@ -135,13 +150,14 @@ SOCKETTESTServer_OBJECTS = \
 # External object files for target SOCKETTESTServer
 SOCKETTESTServer_EXTERNAL_OBJECTS =
 
+../bin/SOCKETTESTServer: src/CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o
 ../bin/SOCKETTESTServer: src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o
 ../bin/SOCKETTESTServer: src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o
 ../bin/SOCKETTESTServer: src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o
 ../bin/SOCKETTESTServer: src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o
 ../bin/SOCKETTESTServer: src/CMakeFiles/SOCKETTESTServer.dir/build.make
 ../bin/SOCKETTESTServer: src/CMakeFiles/SOCKETTESTServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../bin/SOCKETTESTServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lori/cppprojects/GLSocketTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../../bin/SOCKETTESTServer"
 	cd /home/lori/cppprojects/GLSocketTest/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SOCKETTESTServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

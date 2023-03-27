@@ -4,11 +4,12 @@
 #include <winsock2.h>
 #endif
 #ifdef LinuxVersion
-#include<sys/socket.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <unistd.h>
 #endif
-#include<netinet/in.h>
-#include<unistd.h>
-#include<arpa/inet.h>
+
 #include <array>
 #include <cstdint>
 #include <iostream>
@@ -16,7 +17,7 @@
 namespace mystd{
 class GGLSelectMultiIO final{
     public:
-     static constexpr int32_t PORT = 8975;
+     const int32_t PORT = 8975;
      GGLSelectMultiIO();
      ~GGLSelectMultiIO();
     private:

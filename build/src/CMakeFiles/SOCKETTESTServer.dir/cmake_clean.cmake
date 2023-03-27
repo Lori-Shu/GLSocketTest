@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "../../bin/SOCKETTESTServer"
   "../../bin/SOCKETTESTServer.pdb"
+  "CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o"
+  "CMakeFiles/SOCKETTESTServer.dir/GGLEpoll.cpp.o.d"
   "CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o"
   "CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o.d"
   "CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o"

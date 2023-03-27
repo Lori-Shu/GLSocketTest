@@ -1,7 +1,17 @@
 #pragma once
+#define LinuxVersion
+#ifdef WindowsVersion
 #include<winsock2.h>
-#include<string>
-#include<array>
+#endif
+#ifdef LinuxVersion
+#include<sys/socket.h>
+#endif
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <unistd.h>
+
+#include <array>
+#include <string>
 namespace mystd{
     class GLSocketClient{
         public:
@@ -17,6 +27,6 @@ namespace mystd{
         void initWindowsWSA();
         void freeWindowsWSA();
         std::array<char, 1024> clientCharBuffer;
-        SOCKET client{};
+        int32_t client;
     };
 }

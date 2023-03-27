@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.obj"
-  "CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.obj.d"
-  "CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.obj"
-  "CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.obj.d"
-  "D:/cppproject/SocketTest/bin/SOCKETTESTClient.exe"
-  "D:/cppproject/SocketTest/bin/SOCKETTESTClient.exe.manifest"
-  "D:/cppproject/SocketTest/bin/SOCKETTESTClient.pdb"
-  "D:/cppproject/SocketTest/bin/libSOCKETTESTClient.dll.a"
+  "../../bin/SOCKETTESTClient"
+  "../../bin/SOCKETTESTClient.pdb"
+  "CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.o"
+  "CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.o.d"
+  "CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.o"
+  "CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

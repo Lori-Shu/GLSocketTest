@@ -26,10 +26,10 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "D:/program/MinGWDevKit/mingw64/bin/g++.exe",
+            "compilerPath": "/usr/bin/cpp",
             "cStandard": "gnu17",
             "cppStandard": "gnu++20",
-            "intelliSenseMode": "windows-gcc-x64",
+            "intelliSenseMode": "linux-gcc-x64",
             "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],

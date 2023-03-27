@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/cppproject/SocketTest/src/ClientApp.cpp" "src/CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.obj" "gcc" "src/CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.obj.d"
-  "D:/cppproject/SocketTest/src/GLSocketClient.cpp" "src/CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.obj" "gcc" "src/CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.obj.d"
+  "/home/lori/cppprojects/GLSocketTest/src/ClientApp.cpp" "src/CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.o" "gcc" "src/CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.o.d"
+  "/home/lori/cppprojects/GLSocketTest/src/GLSocketClient.cpp" "src/CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.o" "gcc" "src/CMakeFiles/SOCKETTESTClient.dir/GLSocketClient.cpp.o.d"
   )
 
 # Targets to which this target links.

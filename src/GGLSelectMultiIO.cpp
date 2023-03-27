@@ -1,6 +1,6 @@
 #include"GGLSelectMultiIO.h"
 #include<vector>
-#include <unordered_map>
+#include<unordered_map>
 #include<queue>
 namespace mystd{
 using namespace std;
@@ -14,31 +14,38 @@ GGLSelectMultiIO::GGLSelectMultiIO() {
         }
 
      void GGLSelectMultiIO:: createServerSocket(){
-        SOCKADDR_IN serverSockAddr{
+        sockaddr_in serverSockAddr{
             sin_family:PF_INET,
              sin_port : htons(PORT)
             
         };
         serverSockAddr.sin_addr.s_addr = inet_addr("192.168.1.104");
         serverSocket = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
-        int32_t res= bind(serverSocket, (SOCKADDR *)&serverSockAddr, sizeof(serverSockAddr));
+        int32_t res= bind(serverSocket, (sockaddr *)&serverSockAddr, sizeof(serverSockAddr));
         cout << "bind res:" << res << endl;
         int32_t resListen= listen(serverSocket, 20);
         cout << "listen res:" << resListen << endl;
         runSelectMainLoop();
       }
+      
      void GGLSelectMultiIO::initWindowsWSA() {
-  int32_t res = WSAStartup(MAKEWORD(2, 2), &wsaData);
-  std::cout << "wsastartRes:" << res << std::endl;
+#ifdef WindowsVersion
+        int32_t res = WSAStartup(MAKEWORD(2, 2), &wsaData);
+        std::cout << "wsastartRes:" << res << std::endl;
+#endif
 }
+
 void GGLSelectMultiIO::freeWindowsWSA() {
-  // 终止 DLL 的使用
-  int32_t res= WSACleanup();
-  cout << "WSACleanup res:" << res << endl;
+#ifdef WindowsVersion
+        // 终止 DLL 的使用
+        int32_t res = WSACleanup();
+        cout << "WSACleanup res:" << res << endl;
+        #endif
 }
+
 void GGLSelectMultiIO::runSelectMainLoop(){
-  SOCKADDR_IN clientAddr{};
-  SOCKET clientSocket{};
+  sockaddr_in clientAddr{};
+  int32_t clientSocket;
   maxFd = serverSocket;
   int32_t selectedSize=0,tempFD=serverSocket;
   
@@ -54,9 +61,9 @@ void GGLSelectMultiIO::runSelectMainLoop(){
         cout<<"select error"<<endl;
     }
     if(FD_ISSET(serverSocket,&readSet)){
-      clientSocket= accept(serverSocket, (SOCKADDR *)&clientAddr, nullptr);
+      clientSocket= accept(serverSocket, (sockaddr *)&clientAddr, nullptr);
       
-      maxFd=max<SOCKET>(clientSocket,maxFd);
+      maxFd=max<int32_t>(clientSocket,maxFd);
       FD_SET(clientSocket, &allSet);
       --selectedSize;
     }
@@ -71,12 +78,17 @@ void GGLSelectMultiIO::runSelectMainLoop(){
   }
 }
 }
-void GGLSelectMultiIO::handleMsg(SOCKET socketFD) {
+void GGLSelectMultiIO::handleMsg(int32_t socketFD) {
  int32_t resLen= recv(socketFD, msgBuffer.data(), msgBuffer.size(), 0);
  cout << "接收到信息长度:" << resLen << endl;
  if(resLen==0||resLen==-1){
     FD_CLR(socketFD,&allSet);
+    #ifdef WindowsVersion
     int32_t resCs= closesocket(socketFD);
+    #endif
+    #ifdef LinuxVersion
+    int32_t resCs= close(socketFD);
+    #endif
     cout<<"服务器关闭客户端文件描述符:"<<socketFD<<"res:"<<resCs<<endl;
     return;
  }
@@ -92,7 +104,12 @@ void GGLSelectMultiIO::handleMsg(SOCKET socketFD) {
  }
  void GGLSelectMultiIO::closeSockets() {
     for(;maxFd>serverSocket-1;){
+         #ifdef WindowsVersion
         int32_t closeRes= closesocket(maxFd);
+        #endif
+        #ifdef LinuxVersion
+        int32_t closeRes=close(maxFd);
+        #endif
         cout<<"close res:"<<closeRes<<endl;
         --maxFd;
     }

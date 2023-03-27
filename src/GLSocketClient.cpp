@@ -5,16 +5,24 @@
 namespace mystd{
 using namespace std;
 GLSocketClient::GLSocketClient(){
+  #ifdef WindowsVersion
   initWindowsWSA();
+  #endif
   connectServer();
 }
 GLSocketClient ::~GLSocketClient(){
+  #ifdef WindowsVersion
     closesocket(client);
     freeWindowsWSA();
+#endif
+    #ifdef LinuxVersion
+    close(client);
+    #endif
+    
 }
 void GLSocketClient:: connectServer(){
     // 创建套接字
-    client = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
+    client = socket(PF_INET, SOCK_STREAM, 0);
 
     // 向服务器发起请求
     cout << "请输入服务器ip：";
@@ -23,13 +31,13 @@ void GLSocketClient:: connectServer(){
     cout << "请输入服务端口：";
     cin.getline(clientCharBuffer.data(), clientCharBuffer.size());
     string port = clientCharBuffer.data();
-    SOCKADDR_IN sockAddr{};
+    sockaddr_in sockAddr{};
     // memset(&sockAddr, 0, sizeof(sockAddr));  //每个字节都用0填充
     sockAddr.sin_family = PF_INET;
     sockAddr.sin_addr.s_addr = inet_addr(ipStr.c_str());
     sockAddr.sin_port = htons(atoi(port.c_str()));
     cout << "连接服务中......请稍候" << endl;
-    int32_t res= connect(client, (SOCKADDR *)&sockAddr, sizeof(SOCKADDR));
+    int32_t res= connect(client, (sockaddr *)&sockAddr, sizeof(sockAddr));
     assert(res == 0 && "连接服务器失败！");
     cout << "连接服务成功！" << endl;
 }
@@ -74,11 +82,16 @@ void GLSocketClient::loopCmd(){
 }
 
 void GLSocketClient::initWindowsWSA(){
+#ifdef WindowsVersion
     WSADATA wsaData;
     WSAStartup(MAKEWORD(2, 2), &wsaData);
+#endif
 }
 void GLSocketClient::freeWindowsWSA(){
+#ifdef WindowsVersion
     // 终止 DLL 的使用
     WSACleanup();
+    #endif
 }
+
 }

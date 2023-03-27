@@ -1,16 +1,14 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.obj"
-  "CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.obj.d"
-  "CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.obj"
-  "CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.obj.d"
-  "CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.obj"
-  "CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.obj.d"
-  "CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.obj"
-  "CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.obj.d"
-  "D:/cppproject/SocketTest/bin/SOCKETTESTServer.exe"
-  "D:/cppproject/SocketTest/bin/SOCKETTESTServer.exe.manifest"
-  "D:/cppproject/SocketTest/bin/SOCKETTESTServer.pdb"
-  "D:/cppproject/SocketTest/bin/libSOCKETTESTServer.dll.a"
+  "../../bin/SOCKETTESTServer"
+  "../../bin/SOCKETTESTServer.pdb"
+  "CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o"
+  "CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.o.d"
+  "CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o"
+  "CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.o.d"
+  "CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o"
+  "CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.o.d"
+  "CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o"
+  "CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

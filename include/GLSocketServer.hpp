@@ -1,10 +1,19 @@
 #pragma once
+#define LinuxVersion
+#ifdef WindowsVersion
 #include <winsock2.h>
+#endif
+#ifdef LinuxVersion
+#include<sys/socket.h>
+#endif
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <unistd.h>
 
+#include <array>
 #include <string>
 #include <unordered_map>
-#include<array>
-    namespace mystd {
+namespace mystd {
 class GLSocketServer {
     public:
      GLSocketServer(std::string port);
@@ -22,9 +31,11 @@ class GLSocketServer {
      void freeWindowsWSA();
      void freeClients();
      uint32_t acceptConnectionQueueLength = 20;
+     #ifdef WindowsVersion
      WSADATA wsaData;
-     SOCKET serverSocket{};
-     std::unordered_map<std::string, SOCKET> clientMap;
+     #endif
+     int32_t serverSocket;
+     std::unordered_map<std::string, int32_t> clientMap;
      std::array<char, 1024> charBuffer;
 };
 }

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/cppproject/SocketTest/src/GGLSelectMultiIO.cpp" "src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.obj" "gcc" "src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.obj.d"
+  "D:/cppproject/SocketTest/src/GGLThreadPool.cpp" "src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.obj" "gcc" "src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.obj.d"
   "D:/cppproject/SocketTest/src/GLSocketServer.cpp" "src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.obj" "gcc" "src/CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.obj.d"
   "D:/cppproject/SocketTest/src/ServerApp.cpp" "src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.obj" "gcc" "src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.obj.d"
   )

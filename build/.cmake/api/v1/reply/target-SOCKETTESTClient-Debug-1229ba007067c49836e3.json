@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "D:/cppproject/SocketTest/bin/SOCKETTESTServer.exe"
+			"path" : "D:/cppproject/SocketTest/bin/SOCKETTESTClient.exe"
 		},
 		{
-			"path" : "D:/cppproject/SocketTest/bin/SOCKETTESTServer.pdb"
+			"path" : "D:/cppproject/SocketTest/bin/SOCKETTESTClient.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,7 +29,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 23,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
@@ -81,7 +81,7 @@
 			]
 		}
 	],
-	"id" : "SOCKETTESTServer::@145eef247bfb46b6828c",
+	"id" : "SOCKETTESTClient::@145eef247bfb46b6828c",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -106,8 +106,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "SOCKETTESTServer",
-	"nameOnDisk" : "SOCKETTESTServer.exe",
+	"name" : "SOCKETTESTClient",
+	"nameOnDisk" : "SOCKETTESTClient.exe",
 	"paths" : 
 	{
 		"build" : "src",
@@ -129,13 +129,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/GLSocketServer.cpp",
+			"path" : "src/ClientApp.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/ServerApp.cpp",
+			"path" : "src/GLSocketClient.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

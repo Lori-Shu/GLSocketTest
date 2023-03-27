@@ -167,6 +167,54 @@ ClientApp.cpp.s:
 	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTClient.dir\build.make src/CMakeFiles/SOCKETTESTClient.dir/ClientApp.cpp.s
 .PHONY : ClientApp.cpp.s
 
+GGLSelectMultiIO.obj: GGLSelectMultiIO.cpp.obj
+.PHONY : GGLSelectMultiIO.obj
+
+# target to build an object file
+GGLSelectMultiIO.cpp.obj:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.obj
+.PHONY : GGLSelectMultiIO.cpp.obj
+
+GGLSelectMultiIO.i: GGLSelectMultiIO.cpp.i
+.PHONY : GGLSelectMultiIO.i
+
+# target to preprocess a source file
+GGLSelectMultiIO.cpp.i:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.i
+.PHONY : GGLSelectMultiIO.cpp.i
+
+GGLSelectMultiIO.s: GGLSelectMultiIO.cpp.s
+.PHONY : GGLSelectMultiIO.s
+
+# target to generate assembly for a file
+GGLSelectMultiIO.cpp.s:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.s
+.PHONY : GGLSelectMultiIO.cpp.s
+
+GGLThreadPool.obj: GGLThreadPool.cpp.obj
+.PHONY : GGLThreadPool.obj
+
+# target to build an object file
+GGLThreadPool.cpp.obj:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.obj
+.PHONY : GGLThreadPool.cpp.obj
+
+GGLThreadPool.i: GGLThreadPool.cpp.i
+.PHONY : GGLThreadPool.i
+
+# target to preprocess a source file
+GGLThreadPool.cpp.i:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.i
+.PHONY : GGLThreadPool.cpp.i
+
+GGLThreadPool.s: GGLThreadPool.cpp.s
+.PHONY : GGLThreadPool.s
+
+# target to generate assembly for a file
+GGLThreadPool.cpp.s:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.s
+.PHONY : GGLThreadPool.cpp.s
+
 GLSocketClient.obj: GLSocketClient.cpp.obj
 .PHONY : GLSocketClient.obj
 
@@ -252,6 +300,12 @@ help:
 	@echo ... ClientApp.obj
 	@echo ... ClientApp.i
 	@echo ... ClientApp.s
+	@echo ... GGLSelectMultiIO.obj
+	@echo ... GGLSelectMultiIO.i
+	@echo ... GGLSelectMultiIO.s
+	@echo ... GGLThreadPool.obj
+	@echo ... GGLThreadPool.i
+	@echo ... GGLThreadPool.s
 	@echo ... GLSocketClient.obj
 	@echo ... GLSocketClient.i
 	@echo ... GLSocketClient.s

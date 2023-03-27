@@ -10,7 +10,10 @@ ${PROJECT_SOURCE_DIR}/src/ClientApp.cpp
 file(GLOB servercpp  
 ${PROJECT_SOURCE_DIR}/src/GLSocketServer.cpp
 ${PROJECT_SOURCE_DIR}/src/ServerApp.cpp
+${PROJECT_SOURCE_DIR}/src/GGLSelectMultiIO.cpp
+${PROJECT_SOURCE_DIR}/src/GGLThreadPool.cpp
 )
+
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 

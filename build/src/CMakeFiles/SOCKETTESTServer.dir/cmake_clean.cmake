@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.obj"
+  "CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.obj.d"
+  "CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.obj"
+  "CMakeFiles/SOCKETTESTServer.dir/GGLThreadPool.cpp.obj.d"
   "CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.obj"
   "CMakeFiles/SOCKETTESTServer.dir/GLSocketServer.cpp.obj.d"
   "CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.obj"

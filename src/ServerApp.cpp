@@ -2,9 +2,10 @@
 #include<chrono>
 #include "GLSocketServer.hpp"
 #include"GGLThreadPool.h"
+#include"GGLSelectMultiIO.h"
 using namespace std;
-void printNums(int32_t max) {
-  for (int32_t num = 0; num < max;) {
+void printNums(int32_t max,int32_t min) {
+  for (int32_t num = min; num < max;) {
     // cout << "threadId:" << this_thread::get_id();
     cout << num << endl;
     ++num;
@@ -21,12 +22,15 @@ int main() {
   // cout << endl;
   // mystd::GLSocketServer sr{portInput.data()};
   // sr. loopCmd();
-  mystd::GGLThreadPool<int32_t> myThreadPool(5);
-  int32_t numMax = 50;
-  for (int32_t index=0;index<200;){
-     myThreadPool.submit(printNums, numMax);
-     ++index;
-  }
+  // mystd::GGLThreadPool myThreadPool(5);
+  // int32_t numMax = 50;
+  // int32_t nums = 20;
+  // for (int32_t index=0;index<20;){
+  //   myThreadPool.submit(printNums, numMax,nums);
+  //   ++index;
+  // }
+  mystd::GGLSelectMultiIO mtio{};
+  
   cout << "hello" << endl;
   system("pause");
   return 0;

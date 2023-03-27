@@ -57,14 +57,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "SOCKETTESTClient::@145eef247bfb46b6828c",
-					"jsonFile" : "target-SOCKETTESTClient-Debug-e3b1920692d380f02878.json",
+					"jsonFile" : "target-SOCKETTESTClient-Debug-1229ba007067c49836e3.json",
 					"name" : "SOCKETTESTClient",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "SOCKETTESTServer::@145eef247bfb46b6828c",
-					"jsonFile" : "target-SOCKETTESTServer-Debug-640a23944b68eccfc3c2.json",
+					"jsonFile" : "target-SOCKETTESTServer-Debug-58c8504238ff0208220e.json",
 					"name" : "SOCKETTESTServer",
 					"projectIndex" : 0
 				}

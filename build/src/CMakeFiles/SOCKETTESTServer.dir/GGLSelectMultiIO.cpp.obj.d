@@ -385,4 +385,25 @@ src/CMakeFiles/SOCKETTESTServer.dir/GGLSelectMultiIO.cpp.obj: \
  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/basic_ios.tcc \
  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream.tcc \
  D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream \
- D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/vector \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_uninitialized.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_vector.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_bvector.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/vector.tcc \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/unordered_map \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/ext/aligned_buffer.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hashtable.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hashtable_policy.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/tuple \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/uses_allocator.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/enable_special_members.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/node_handle.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unordered_map.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/erase_if.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/queue \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/deque \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_deque.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/deque.tcc \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_heap.h \
+ D:/program/MinGWDevKit/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_queue.h

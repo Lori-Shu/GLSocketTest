@@ -40,7 +40,7 @@ void GGLSelectMultiIO::runSelectMainLoop(){
   SOCKADDR_IN clientAddr{};
   SOCKET clientSocket{};
   maxFd = serverSocket;
-  int32_t selectedSize=0,tempFD=serverSocket;
+  int32_t selectedSize=0,tempFD=serverSocket,socketLen=0;
   
   FD_ZERO(&readSet);
   FD_ZERO(&writeSet);
@@ -54,7 +54,7 @@ void GGLSelectMultiIO::runSelectMainLoop(){
         cout<<"select error"<<endl;
     }
     if(FD_ISSET(serverSocket,&readSet)){
-      clientSocket= accept(serverSocket, (SOCKADDR *)&clientAddr, nullptr);
+      clientSocket= accept(serverSocket, (SOCKADDR *)&clientAddr,&socketLen);
       
       maxFd=max<SOCKET>(clientSocket,maxFd);
       FD_SET(clientSocket, &allSet);

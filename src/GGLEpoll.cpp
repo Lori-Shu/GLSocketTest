@@ -56,6 +56,7 @@ void GGLEpoll::runEpollMainLoop() {
           if (addRes != 0) {
             cout << "add socket failed" << addRes<<endl;
           }
+          clientFds.insert(clientSocket);
           --handleEventSize;
           continue;
         }
@@ -73,6 +74,7 @@ void GGLEpoll::handleMsg(int32_t epFd,epoll_event & event){
      if (delRes != 0) {
         cout << "del socket failed" << endl;
      }
+     clientFds.erase(clientFd);
 #ifdef WindowsVersion
       int32_t resCs = closesocket(socketFD);
 #endif
@@ -96,5 +98,8 @@ void GGLEpoll::handleMsg(int32_t epFd,epoll_event & event){
 void GGLEpoll:: closeSockets(){
   close(serverSocket);
   close(epollFd);
+  for(auto &fd:clientFds){
+    close(fd);
+  }
 }
 }

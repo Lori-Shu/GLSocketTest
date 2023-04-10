@@ -6,54 +6,89 @@
 #include<thread>
 #include<functional>
 #include<queue>
+#include<chrono>
+#include<unordered_set>
+#include<iostream>
+#define WindowsVersion
+#ifdef WindowsVersion
+#include<windows.h>
+#endif
+#ifdef LinuxVersion
+#include<unistd.h>
+#endif
 namespace mystd{
 using TaskFunc = std::function<void()>;
-class GGLThreadPool  final{
-  
-
+template<typename... T>
+using AnyFuncPtr = void(*)(T...);
+template <typename... T>
+using TempFunc = std::function<void(T...)>;
+class GGLThreadPool final{
  public:
-  GGLThreadPool(int32_t size);
+  class GGLThread final{
+   public:
+    GGLThread(void (*task)(GGLThreadPool::GGLThread *,
+                           GGLThreadPool *),
+              GGLThreadPool* poolPtr);
+    ~GGLThread();
+    std::thread* tdPtr;
+    GGLThreadPool* threadPool;
+    bool shutDownFlag = false;
+  };
+  GGLThreadPool();
   ~GGLThreadPool();
-  template <typename Func,typename...T>
-  void submit(Func func, T &... t);
+  template <typename...T>
+  void submit(AnyFuncPtr<T...> funcPtr, T &... t);
+  int32_t getThreadPoolSize();
+// private:
+  void getHarderWareThreadConfig();
 
- private:
-  void mainTask();
+  void createSizeManager();
+ 
   void createThreads(int32_t size);
-  template <typename Func, typename T>
-  TaskFunc bindFunctionToTaskFunc(Func func, T &t);
-  template <typename Func, typename R,typename... T>
-  TaskFunc bindFunctionToTaskFunc(Func func,R &temp, T &...t);
-  std::vector<std::thread> threads;
+  template <typename T>
+  TaskFunc bindFunctionToTaskFunc(TempFunc<T> func, T &t);
+  template <typename R, typename... T,typename... Args>
+  TaskFunc bindFunctionToTaskFunc(TempFunc<Args...> func, R &temp, T &...t);
+  int32_t coreSize=0;
+  int32_t maxThreadSize=0;
+  GGLThread* sizeManager; 
+  std::vector<GGLThread*> threads;
   const int32_t GGLTaskSize = 20;
+  const int32_t defaultMinSize=2;
+  std::unordered_set<GGLThread*> busyThreads;
   std::queue<TaskFunc> taskQueue;
-  std::mutex mtx;
+  std::mutex threadsMtx;
+  std::mutex queueMtx;
+  std::mutex busyThreadsMtx;
   std::condition_variable produConVa;
   std::condition_variable consuConVa;
-  bool shutDownFlag = false;
 };
-template <typename Func, typename... T>
-void GGLThreadPool::submit(Func func, T &...t) {
-  std::unique_lock<std::mutex> queueLock(mtx, std::defer_lock);
+template <typename... T>
+void GGLThreadPool::submit(AnyFuncPtr<T...> funcPtr, T &...t) {
+  std::unique_lock<std::mutex> queueLock(queueMtx, std::defer_lock);
   queueLock.lock();
   for (; taskQueue.size() == GGLTaskSize;) {
     consuConVa.notify_one();
     produConVa.wait(queueLock);
   }
-
-  TaskFunc fc = std::bind(func, t...);
+  TempFunc<T...> tf = funcPtr;
+  TaskFunc fc = bind(tf, t...);
   taskQueue.push(fc);
   queueLock.unlock();
-  produConVa.notify_one();
+  consuConVa.notify_one();
 }
-template <typename Func, typename T>
-TaskFunc GGLThreadPool::bindFunctionToTaskFunc(Func func, T &t) {
+// 递归获取...中的每个参数
+template <typename T>
+TaskFunc GGLThreadPool::bindFunctionToTaskFunc(TempFunc<T> func, T &t) {
   return bind(func, t);
 }
-template <typename Func, typename R, typename... T>
-TaskFunc GGLThreadPool::bindFunctionToTaskFunc(Func func, R &temp, T &...t) {
-  auto tf = bind(func, temp);
-  auto res = bindFunctionToTaskFunc(tf, t...);
-  return static_cast<TaskFunc>(res);
+template <typename R, typename... T,typename ...Args>
+TaskFunc GGLThreadPool::bindFunctionToTaskFunc(TempFunc<Args...> func, R &temp, T &...t) {
+  TempFunc<T...> tf = bind(func, temp);
+  TaskFunc res = bindFunctionToTaskFunc(tf, t...);
+  return res;
 }
+void mainTask(GGLThreadPool::GGLThread * tdPtr,GGLThreadPool * poolPtr);
+void managePoolSize(GGLThreadPool::GGLThread * tdPtr,
+                    GGLThreadPool * poolPtr);
 }

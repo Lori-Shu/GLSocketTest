@@ -52,4 +52,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/SOCKETTESTClient.dir/DependInfo.cmake"
   "src/CMakeFiles/SOCKETTESTServer.dir/DependInfo.cmake"
+  "src/CMakeFiles/testMacro.dir/DependInfo.cmake"
   )

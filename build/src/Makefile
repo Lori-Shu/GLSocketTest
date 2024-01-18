@@ -143,6 +143,20 @@ SOCKETTESTServer/fast:
 	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/build
 .PHONY : SOCKETTESTServer/fast
 
+# Convenience name for target.
+src/CMakeFiles/testMacro.dir/rule:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/testMacro.dir/rule
+.PHONY : src/CMakeFiles/testMacro.dir/rule
+
+# Convenience name for target.
+testMacro: src/CMakeFiles/testMacro.dir/rule
+.PHONY : testMacro
+
+# fast build rule for target.
+testMacro/fast:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\testMacro.dir\build.make src/CMakeFiles/testMacro.dir/build
+.PHONY : testMacro/fast
+
 ClientApp.obj: ClientApp.cpp.obj
 .PHONY : ClientApp.obj
 
@@ -287,6 +301,30 @@ ServerApp.cpp.s:
 	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/ServerApp.cpp.s
 .PHONY : ServerApp.cpp.s
 
+testMacro.obj: testMacro.cpp.obj
+.PHONY : testMacro.obj
+
+# target to build an object file
+testMacro.cpp.obj:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\testMacro.dir\build.make src/CMakeFiles/testMacro.dir/testMacro.cpp.obj
+.PHONY : testMacro.cpp.obj
+
+testMacro.i: testMacro.cpp.i
+.PHONY : testMacro.i
+
+# target to preprocess a source file
+testMacro.cpp.i:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\testMacro.dir\build.make src/CMakeFiles/testMacro.dir/testMacro.cpp.i
+.PHONY : testMacro.cpp.i
+
+testMacro.s: testMacro.cpp.s
+.PHONY : testMacro.s
+
+# target to generate assembly for a file
+testMacro.cpp.s:
+	cd /d D:\cppproject\SocketTest\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\testMacro.dir\build.make src/CMakeFiles/testMacro.dir/testMacro.cpp.s
+.PHONY : testMacro.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -297,6 +335,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... SOCKETTESTClient
 	@echo ... SOCKETTESTServer
+	@echo ... testMacro
 	@echo ... ClientApp.obj
 	@echo ... ClientApp.i
 	@echo ... ClientApp.s
@@ -315,6 +354,9 @@ help:
 	@echo ... ServerApp.obj
 	@echo ... ServerApp.i
 	@echo ... ServerApp.s
+	@echo ... testMacro.obj
+	@echo ... testMacro.i
+	@echo ... testMacro.s
 .PHONY : help
 
 

@@ -141,6 +141,19 @@ SOCKETTESTServer/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/build
 .PHONY : SOCKETTESTServer/fast
 
+#=============================================================================
+# Target rules for targets named testMacro
+
+# Build rule for target.
+testMacro: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 testMacro
+.PHONY : testMacro
+
+# fast build rule for target.
+testMacro/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\testMacro.dir\build.make src/CMakeFiles/testMacro.dir/build
+.PHONY : testMacro/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -151,6 +164,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... SOCKETTESTClient
 	@echo ... SOCKETTESTServer
+	@echo ... testMacro
 .PHONY : help
 
 

@@ -2,5 +2,6 @@ D:/cppproject/SocketTest/build/CMakeFiles/edit_cache.dir
 D:/cppproject/SocketTest/build/CMakeFiles/rebuild_cache.dir
 D:/cppproject/SocketTest/build/src/CMakeFiles/SOCKETTESTClient.dir
 D:/cppproject/SocketTest/build/src/CMakeFiles/SOCKETTESTServer.dir
+D:/cppproject/SocketTest/build/src/CMakeFiles/testMacro.dir
 D:/cppproject/SocketTest/build/src/CMakeFiles/edit_cache.dir
 D:/cppproject/SocketTest/build/src/CMakeFiles/rebuild_cache.dir

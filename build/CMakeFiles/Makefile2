@@ -79,6 +79,7 @@ clean: src/clean
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/SOCKETTESTClient.dir/all
 src/all: src/CMakeFiles/SOCKETTESTServer.dir/all
+src/all: src/CMakeFiles/testMacro.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -88,6 +89,7 @@ src/preinstall:
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/SOCKETTESTClient.dir/clean
 src/clean: src/CMakeFiles/SOCKETTESTServer.dir/clean
+src/clean: src/CMakeFiles/testMacro.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -141,6 +143,32 @@ SOCKETTESTServer: src/CMakeFiles/SOCKETTESTServer.dir/rule
 src/CMakeFiles/SOCKETTESTServer.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\SOCKETTESTServer.dir\build.make src/CMakeFiles/SOCKETTESTServer.dir/clean
 .PHONY : src/CMakeFiles/SOCKETTESTServer.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/testMacro.dir
+
+# All Build rule for target.
+src/CMakeFiles/testMacro.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\testMacro.dir\build.make src/CMakeFiles/testMacro.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\testMacro.dir\build.make src/CMakeFiles/testMacro.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\cppproject\SocketTest\build\CMakeFiles --progress-num=9,10 "Built target testMacro"
+.PHONY : src/CMakeFiles/testMacro.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/testMacro.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\cppproject\SocketTest\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/testMacro.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\cppproject\SocketTest\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/testMacro.dir/rule
+
+# Convenience name for target.
+testMacro: src/CMakeFiles/testMacro.dir/rule
+.PHONY : testMacro
+
+# clean rule for target.
+src/CMakeFiles/testMacro.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\testMacro.dir\build.make src/CMakeFiles/testMacro.dir/clean
+.PHONY : src/CMakeFiles/testMacro.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -25,3 +25,4 @@ target_link_libraries(${PROJECT_NAME}Client ws2_32)
 
 add_executable(${PROJECT_NAME}Server ${servercpp})
 target_link_libraries(${PROJECT_NAME}Server ws2_32)
+add_executable(testMacro ${PROJECT_SOURCE_DIR}/src/testMacro.cpp)
